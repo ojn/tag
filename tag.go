@@ -39,7 +39,7 @@ type AliasFile struct {
 func NewAliasFile() *AliasFile {
 	aliasFilename := os.Getenv("TAG_ALIAS_FILE")
 	if len(aliasFilename) == 0 {
-		aliasFilename = "/tmp/tag_aliases"
+		aliasFilename = "/usr/share/tag/tag_aliases"
 	}
 
 	aliasPrefix := os.Getenv("TAG_ALIAS_PREFIX")
@@ -49,7 +49,7 @@ func NewAliasFile() *AliasFile {
 
 	aliasCmdFmtString := os.Getenv("TAG_CMD_FMT_STRING")
 	if len(aliasCmdFmtString) == 0 {
-		aliasCmdFmtString = "vim {{.Filename}} +{{.LineNumber}}"
+		aliasCmdFmtString = "micro -startpos {{.LineNumber}},0 {{.Filename}}"
 	}
 
 	a := &AliasFile{
