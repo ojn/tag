@@ -1,5 +1,8 @@
-tag - Tag your ag matches
+tag - Tag your ag matches, customized to work with [Micro](https://github.com/zyedidia/micro)
 ====
+Aliases go to:
+*/usr/share/tag/tag_aliases*
+
 ![revolv++](tag.gif)
 
 **tag** is a lightweight wrapper around **[ag](https://github.com/ggreer/the_silver_searcher)** that generates shell aliases for **ag** matches. tag is a very fast Golang rewrite of [sack](https://github.com/sampson-chen/sack).
