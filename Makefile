@@ -1,6 +1,6 @@
 SHELL:=/bin/bash
 
-GOBUILD=go build -v github.com/aykamko/tag >/dev/null
+GOBUILD=go build -v github.com/ojn/tag >/dev/null
 
 build:
 	go build
